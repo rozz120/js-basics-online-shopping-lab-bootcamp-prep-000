@@ -118,26 +118,26 @@ describe("total()", function() {
 
     expect(total()).toBe(totalCost);
   });
-// });
+});
 
-// describe("removeFromCart()", function() {
-//   it("removes the specified item from the cart", function() {
-//     addToCart("vanilla");
-//     addToCart("watermelon");
-//     addToCart("yams");
+describe("removeFromCart()", function() {
+  it("removes the specified item from the cart", function() {
+    addToCart("vanilla");
+    addToCart("watermelon");
+    addToCart("yams");
 
-//     removeFromCart("watermelon");
+    removeFromCart("watermelon");
 
-//     const firstItemName = getCart()[0].itemName;
-//     const secondItemName = getCart()[1].itemName;
+    const firstItemName = getCart()[0].itemName;
+    const secondItemName = getCart()[1].itemName;
 
-//     expect(firstItemName).toEqual("vanilla");
-//     expect(secondItemName).toEqual("yams");
+    expect(firstItemName).toEqual("vanilla");
+    expect(secondItemName).toEqual("yams");
 
-//     removeFromCart("yams");
+    removeFromCart("yams");
 
-//     expect(getCart().length).toEqual(1);
-//   });
+    expect(getCart().length).toEqual(1);
+  });
 
 //   it("alerts you if you're trying to remove an item that isn't in your cart", function() {
 //     // Repeat item name from previous test to prevent hard-coding.
