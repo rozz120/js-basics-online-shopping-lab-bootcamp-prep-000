@@ -60,13 +60,13 @@ function total() {
 function removeFromCart(item) {
   var i;
   var hasAnItemBeenRemoved = false;
-  // for(i = 0; i< cart.length; i++)
-  // {
-  //   if(getCart()[i].itemName === item)
-  //   {
-  //     hasAnItemBeenRemoved = true;
-  //     cart.splice(i, 1);
-  //   }
+  for(i = 0; i< cart.length; i++)
+  {
+    if(getCart()[i].itemName === item)
+    {
+      hasAnItemBeenRemoved = true;
+      cart.splice(i, 1);
+    }
   }
   if(hasAnItemBeenRemoved === false)
   {
