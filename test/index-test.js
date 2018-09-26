@@ -118,7 +118,7 @@ describe("total()", function() {
 
     expect(total()).toBe(totalCost);
   });
-});
+// });
 
 // describe("removeFromCart()", function() {
 //   it("removes the specified item from the cart", function() {
