@@ -26,10 +26,8 @@ function viewCart ()
   if(cart.length === 1){
     return("In your cart, you have " + getCart()[0].itemName + " at $" + getCart()[0].itemPrice + ".")
   }
-  
   if(cart.length > 1)
   {
-    
     var whatsInTheCart = "In your cart, you have "
     var i;
     for(i = 0; i< cart.length; i++)
@@ -40,12 +38,10 @@ function viewCart ()
       }
       
      whatsInTheCart = ( whatsInTheCart + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ", ")
-      
     }
     return whatsInTheCart;
   }
 }
-
 
 function total() {
   var i;
@@ -76,5 +72,22 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  
+  
+  if(cardNumber === )
+  "Sorry, we don't have a credit card on file for you."
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
