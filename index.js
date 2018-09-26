@@ -49,7 +49,7 @@ function viewCart ()
 
 function total() {
   var i;
-  var cartTotalPrice;
+  var cartTotalPrice = 0;
   for(i=0; i<cart.length; i++)
   {
     cartTotalPrice = cartTotalPrice + getCart()[i].itemPrice;
