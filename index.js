@@ -84,7 +84,7 @@ function placeOrder(cardNumber) {
     totalCost = totalCost + getCart()[i].itemPrice;
   }
   
-  return("Your total cost is $" + totalCost ", which will be charged to the card" + cardNumber);
+  return("Your total cost is $" + totalCost + ", which will be charged to the card" + cardNumber);
   
   
 }
