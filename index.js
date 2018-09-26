@@ -29,8 +29,7 @@ function viewCart ()
   
   if(cart.length === 2)
   {
-   "In your cart, you have " + getCart()[0].itemName + " at $" + getCart()[0].itemPrice + ", and "+ getCart()[1].itemName + " at $" + getCart()[1].itemPrice + ".") 
-    
+   "In your cart, you have " + getCart()[0].itemName + " at $" + getCart()[0].itemPrice + ", and "+ getCart()[1].itemName + " at $" + getCart()[1].itemPrice + ".");
     
   }
 }
