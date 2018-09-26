@@ -64,17 +64,17 @@ expect(itemName).toEqual("daikon");
 
     expect(addToCart("juice")).toEqual("juice has been added to your cart.");
   });
-//});
+});
 
-// describe("viewCart()", function() {
-//   it("prints 'Your shopping cart is empty.' if the cart is empty", function() {
-//     expect(viewCart()).toEqual("Your shopping cart is empty.")
-//   });
+describe("viewCart()", function() {
+  it("prints 'Your shopping cart is empty.' if the cart is empty", function() {
+    expect(viewCart()).toEqual("Your shopping cart is empty.")
+  });
 
-//   it("correctly prints a one-item cart", function() {
-//     addToCart("lemons");
-//     expect(viewCart()).toEqual(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`);
-//   });
+  it("correctly prints a one-item cart", function() {
+    addToCart("lemons");
+    expect(viewCart()).toEqual(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`);
+  });
 
 //   it("correctly prints a two-item cart", function() {
 //     addToCart("mango");
