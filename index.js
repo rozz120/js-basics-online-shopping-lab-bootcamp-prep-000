@@ -24,7 +24,7 @@ function viewCart ()
   }
   
   if(cart.length === 1){
-    return("In your cart, you have " + cart.item + " at " + cart.price)
+    return("In your cart, you have " + cart.itemName + " at " + cart.itemPrice)
   }
 }
 
