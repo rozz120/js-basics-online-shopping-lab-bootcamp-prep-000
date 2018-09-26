@@ -26,6 +26,13 @@ function viewCart ()
   if(cart.length === 1){
     return("In your cart, you have " + getCart()[0].itemName + " at $" + getCart()[0].itemPrice + ".")
   }
+  
+  if(cart.length > 1)
+  {
+    
+    
+    return("In your cart, you have " + )
+  }
 }
 
 
