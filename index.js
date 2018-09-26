@@ -32,7 +32,7 @@ function viewCart ()
   // return ("In your cart, you have " + getCart()[0].itemName + " at $" + getCart()[0].itemPrice + ", and "  + getCart()[1].itemName + " at $" + getCart()[1].itemPrice + ".");
   // }
   
-  if(cart.length > 2)
+  if(cart.length > 1)
   {
     
     var whatsInTheCart = "In your cart, you have "
