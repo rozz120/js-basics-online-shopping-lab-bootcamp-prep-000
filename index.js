@@ -44,7 +44,7 @@ function viewCart ()
       //   return (whatsInTheCart + "and " + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ".")
       // }
       
-      whatsInTheCart + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ", "
+     return( whatsInTheCart + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ", ")
       
     }
     return whatsInTheCart;
