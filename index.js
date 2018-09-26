@@ -72,14 +72,19 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  
   if(isNaN(cardNumber))
   {
   return("Sorry, we don't have a credit card on file for you.");
   }
   
+  var i;
+  var totalCost = 0;
+  for(i=0; i < cart.length; i++)
+  {
+    totalCost = totalCost + getCart()[i].itemPrice;
+  }
   
-  
+  return( "")
   
   
 }
