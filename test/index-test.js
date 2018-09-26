@@ -64,7 +64,7 @@ expect(itemName).toEqual("daikon");
 
     expect(addToCart("juice")).toEqual("juice has been added to your cart.");
   });
-});
+//});
 
 // describe("viewCart()", function() {
 //   it("prints 'Your shopping cart is empty.' if the cart is empty", function() {
