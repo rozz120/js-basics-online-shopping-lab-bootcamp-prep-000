@@ -66,7 +66,7 @@ function removeFromCart(item) {
       cart.splice(i, 1);
     }
   }
-  return cart
+  return cart;
 }
 
 function placeOrder(cardNumber) {
