@@ -39,7 +39,7 @@ function viewCart ()
     var i;
     for(i = 0; i< cart.length; i++)
     { 
-      if(i === cart.length)
+      if(i + 1 === cart.length)
       {
         return (whatsInTheCart + "and " + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ".")
       }
