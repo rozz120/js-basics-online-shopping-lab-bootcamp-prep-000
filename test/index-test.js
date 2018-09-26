@@ -143,7 +143,7 @@ describe("removeFromCart()", function() {
      // Repeat item name from previous test to prevent hard-coding.
      expect(removeFromCart("yams")).toEqual("That item is not in your cart.");
    });
- });
+// });
 
 // describe("placeOrder()", function() {
 //   it("doesn't place the order if a credit card number is not provided", function() {
