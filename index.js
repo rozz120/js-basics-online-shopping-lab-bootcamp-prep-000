@@ -70,7 +70,7 @@ function removeFromCart(item) {
   }
   if(hasAnItemBeenRemoved = false)
   {
-    return()
+    return("That item is not in your cart.")
   }
   return cart;
 }
