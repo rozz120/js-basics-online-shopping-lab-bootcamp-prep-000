@@ -96,29 +96,29 @@ describe("viewCart()", function() {
       `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, ${getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
     );
   });
-//});
+});
 
-// describe("total()", function() {
-//   it("adds up the price of all items in the cart", function() {
-//     addToCart("sorghum");
-//     addToCart("tarragon");
+describe("total()", function() {
+  it("adds up the price of all items in the cart", function() {
+    addToCart("sorghum");
+    addToCart("tarragon");
 
-//     const sorghumCost = getCart()[0].itemPrice;
-//     const tarragonCost = getCart()[1].itemPrice;
+    const sorghumCost = getCart()[0].itemPrice;
+    const tarragonCost = getCart()[1].itemPrice;
 
-//     let totalCost = sorghumCost + tarragonCost;
+    let totalCost = sorghumCost + tarragonCost;
 
-//     expect(total()).toBe(totalCost);
+    expect(total()).toBe(totalCost);
 
-//     addToCart("urchin");
+    addToCart("urchin");
 
-//     const urchinCost = getCart()[2].itemPrice;
+    const urchinCost = getCart()[2].itemPrice;
 
-//     totalCost += urchinCost;
+    totalCost += urchinCost;
 
-//     expect(total()).toBe(totalCost);
-//   });
-// });
+    expect(total()).toBe(totalCost);
+  });
+});
 
 // describe("removeFromCart()", function() {
 //   it("removes the specified item from the cart", function() {
