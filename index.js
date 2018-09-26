@@ -34,6 +34,7 @@ function viewCart ()
   
   if(cart.length > 2)
   {
+    var whatsInTheCart = " "
     var i;
     for(i=0; i< cart.length; i++)
     {
