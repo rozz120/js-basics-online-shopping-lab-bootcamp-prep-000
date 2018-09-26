@@ -76,14 +76,14 @@ describe("viewCart()", function() {
     expect(viewCart()).toEqual(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`);
   });
 
-//   it("correctly prints a two-item cart", function() {
-//     addToCart("mango");
-//     addToCart("nuts");
+  it("correctly prints a two-item cart", function() {
+    addToCart("mango");
+    addToCart("nuts");
 
-//     expect(viewCart()).toEqual(
-//       `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
-//     );
-//   });
+    expect(viewCart()).toEqual(
+      `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
+    );
+  });
 
 //   it("correctly prints a three-or-more-item cart", function() {
 //     addToCart("orange");
