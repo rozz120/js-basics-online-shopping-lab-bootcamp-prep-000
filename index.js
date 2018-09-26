@@ -65,7 +65,7 @@ function removeFromCart(item) {
     if(getCart()[i].itemName === item)
     {
        hasAnItemBeenRemoved = true;
-       return(cart.splice(i, 1));
+       cart.splice(i, 1);
     }
   }
   if(hasAnItemBeenRemoved = false)
