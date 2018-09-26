@@ -96,7 +96,7 @@ describe("viewCart()", function() {
       `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, ${getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
     );
   });
-});
+//});
 
 // describe("total()", function() {
 //   it("adds up the price of all items in the cart", function() {
