@@ -48,7 +48,13 @@ function viewCart ()
 
 
 function total() {
-  // write your code here
+  var i;
+  var cartTotalPrice;
+  for(i=0; i<cart.length; i++)
+  {
+    cartTotalPrice = cartTotalPrice + getCart()[i].itemPrice;
+  }
+  return cartTotalPrice;
 }
 
 function removeFromCart(item) {
