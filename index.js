@@ -34,12 +34,11 @@ function viewCart ()
   
   if(cart.length > 2)
   {
-    var whatsInTheCart = " "
+    var whatsInTheCart = "In your cart, you have "
     var i;
     for(i=0; i< cart.length; i++)
-    {
-      
-      
+    { 
+      whatsInTheCart + getCart()[i].itemName
       
       if(i === cart.length)
       {
