@@ -59,12 +59,12 @@ expect(itemName).toEqual("daikon");
     expect(areAllPricesEqual).toBe(false);
   });
 
-//   it("returns a message indicating that the item has been added", function() {
-//     expect(addToCart("ice cream")).toEqual("ice cream has been added to your cart.");
+  it("returns a message indicating that the item has been added", function() {
+    expect(addToCart("ice cream")).toEqual("ice cream has been added to your cart.");
 
-//     expect(addToCart("juice")).toEqual("juice has been added to your cart.");
-//   });
-// });
+    expect(addToCart("juice")).toEqual("juice has been added to your cart.");
+  });
+});
 
 // describe("viewCart()", function() {
 //   it("prints 'Your shopping cart is empty.' if the cart is empty", function() {
