@@ -47,6 +47,7 @@ function viewCart ()
       whatsInTheCart + getCart()[i].itemName + " at $" +  getCart()[i].itemPrice + ", "
       
     }
+    return whatsInTheCart;
   }
 }
 
