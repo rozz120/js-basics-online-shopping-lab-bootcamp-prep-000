@@ -143,30 +143,30 @@ describe("removeFromCart()", function() {
      // Repeat item name from previous test to prevent hard-coding.
      expect(removeFromCart("yams")).toEqual("That item is not in your cart.");
    });
-// });
+});
 
-// describe("placeOrder()", function() {
-//   it("doesn't place the order if a credit card number is not provided", function() {
+describe("placeOrder()", function() {
+  it("doesn't place the order if a credit card number is not provided", function() {
   
-//     expect(placeOrder()).toEqual("Sorry, we don't have a credit card on file for you.");
-//   });
+    expect(placeOrder()).toEqual("Sorry, we don't have a credit card on file for you.");
+  });
 
-//   it("places an order when a credit card number is provided", function() {
-//     addToCart("zucchini");
+  it("places an order when a credit card number is provided", function() {
+    addToCart("zucchini");
 
-//     const cartTotal = total();
-//     const cardNumber = Math.floor(Math.random() * 100000000);
+    const cartTotal = total();
+    const cardNumber = Math.floor(Math.random() * 100000000);
 
   
 
-//     expect(placeOrder(cardNumber)).toEqual(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`);
-//   });
+    expect(placeOrder(cardNumber)).toEqual(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`);
+  });
 
-//   it("empties the cart", function() {
-//     addToCart("apples");
+  it("empties the cart", function() {
+    addToCart("apples");
 
-//     placeOrder(12345678);
+    placeOrder(12345678);
 
-//     expect(getCart()).toEqual([]);
-//   });
+    expect(getCart()).toEqual([]);
+  });
 });
